@@ -1,0 +1,28 @@
+html {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif
+     
+}
+img.card-img-top {
+    max-height:25vh !important;
+    max-width:25vh !important;
+
+}
+
+.card{
+    margin:1.5vh;
+}
+
+img.listPage{
+    max-height:50vh !important;
+    max-width:50vh !important;
+    margin:2vh
+}
+
+div.title{
+    margin:2vh
+}
+
+h3.description{
+    margin:2vh
+}

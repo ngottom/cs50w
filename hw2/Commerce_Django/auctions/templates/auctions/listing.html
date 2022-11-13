@@ -1,0 +1,48 @@
+{% extends "auctions/layout.html" %}
+{% block body %}
+
+<div class="row mx-3">
+    {% if user.is_authenticated %}
+        {% if isListingInWatchlist %}
+        <form action="{% url 'removeWatchlist' id=listingData.id %}" method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Remove From Watchlist</button> 
+        </form>
+        {% else %}
+        <form action="{% url 'addWatchlist' id=listingData.id %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-success">Add to Watchlist</button> 
+            </form>
+        {% endif %}
+    {% endif %}
+</div>
+
+
+<div class="title">
+<h2>{{listingData.title}}</h2>
+</div>
+<img src="{{listingData.imageURL}}" class="listPage" style="height:50vh;width:50vh"><br>
+<p> <h3 class="description">{{listingData.description}}<br>
+${{listingData.price}}</h3>
+</p>
+
+    <h2>Comments</h2>
+    {% if user.is_authenticated %}
+    
+    <form action = "{% url 'addComment' id=listingData.id %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="newComment" placeholder="Add new comment">
+        <button type="submit" class="btn btn-warning">Submit</button>     
+    </form>
+    {% endif %}
+</div> 
+<div>
+    {% for comment in comments %}
+    <li class="list-group-item"> {{comment.message}} 
+    <br><p>posted by <strong>{{comment.author}}</strong></p>
+    <br>{{comment.datetime}}
+    </li>
+     
+    {% endfor %}
+</div>
+{% endblock %}     
