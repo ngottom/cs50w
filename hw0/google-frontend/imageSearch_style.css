@@ -1,0 +1,15 @@
+.D0h3Gf {
+line-height: 25px;
+background-color: transparent;
+border: none;
+margin: 0;
+padding: 0 0 0 16px;
+font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+font-size: 16px;
+color: rgba(0,0,0,.87);
+word-wrap: break-word;
+outline: none;
+display: flex;
+flex: 1;
+-webkit-tap-highlight-color: transparent;
+width: 100%;
