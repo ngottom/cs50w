@@ -1,0 +1,15 @@
+ul {
+  font-size: 14px;
+  color: red;
+}
+
+ol {
+  font: size 18px;
+  color: red;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*# sourceMappingURL=variables.css.map */

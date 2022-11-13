@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content="width=device-width", initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendant selector (children of ul) */
+        ul > li{
+            color:blue
+        }
+        button{
+            width:200px;
+            height:50px;
+            font-size:24px;
+            color:white;
+            background-color:green
+            
+        }
+        /* example pseudoclass */
+        button:hover{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>list item1</li>
+        <li>list item2</li>
+        <ul>
+            <li>li1</li>
+            <li>li2</li>
+        </ul>
+        <li>list item 3</li>
+    </ol>
+    <div>
+        <ol>    
+        <li>list item1</li>
+        <li>list item2</li>
+        </ol>
+    </div>
+    <button>submit</button>
+</body>
+</html>

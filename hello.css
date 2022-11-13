@@ -1,0 +1,18 @@
+body {
+    font-family: Robotico, Arial, Helvetica, sans-serif
+}
+h2 {
+    color:orangered;
+    text-align:left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse:collapse;
+    padding:5px;
+    text-align:center;
+  }
+#parent{
+    display:flex 1
+    background:lightgreen;
+}
